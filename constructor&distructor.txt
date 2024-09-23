@@ -1,0 +1,24 @@
+Accessors(getters):- getters are used to access the private data members of a class.
+Mutators(setters):- setters are used to modify the private data members of a class.
+
+Constructor:- A constructor is a special member function that is called when an object of a class is created.
+
+Facts about constructors:-
+1. The name of the constructor is same as the name of the class.
+2. Constructors are used to initialize the objects of the class.
+3. Constructors are called automatically when an object is created.
+4. Constructors can be overloaded.
+5. Constructors cannot be virtual.
+6. Constructors does not return anything.
+
+Types of Constructor:-
+
+1. Default Constructor: - A default constructor is a constructor that has no parameters. If you donn't create manually, It is automatically created at compile time by compiler.
+2. Parameterized Constructor:- The parameterized constructor accepts parameters and initializes the data members of the class.
+3. Copy Constructor:- The copy constructor is used to copy the data members of one object to another object. It is used to create an object of the class from another object of the same class. It takes a object as a parameter.
+
+Destructor:- A destructor is a special member function that is called when an object of a class is destroyed.
+
+Facts about destructors:-
+1. The name of the destructor is same as the name of the class.
+2. It is used to deallocate the memory occupied by the object.
