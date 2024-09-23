@@ -9,7 +9,7 @@ price (double)
 registrationCost (double)
 Public Member Functions:
 
-A constructor that initializes the carID, brand, and price of the Car and calculates the registration cost as 0.21x of the price.
+A constructor that initializes the carID, brand, and price of the Car and calculates the registration cost as 21% of the price.
 A destructor.
 A function display to print the details of the car including the calculated registration cost.
 You need to create an array of 3 Car objects, take input for each car from the command line, display the details of all cars.

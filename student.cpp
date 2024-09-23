@@ -36,5 +36,67 @@ Student 3: Student ID: 203, Name: Bob, Marks: 62.00, Credits: 7.44
 */
 
 #include <iostream>
-using namespace 
+#include <iomanip>
+using namespace std;
+
+class Student{
+
+    private:
+    int studentID;
+    string name;
+    double marks;
+    double credits;
+
+    public:
+    Student(){}
+
+    Student(int studentID, const string& name, double marks){
+        // pass by value and pass by reference
+        this->studentID = studentID;
+        this->name = name;
+        this->marks = marks;
+        credits = marks * 0.12;
+    }
+
+    ~Student(){
+        cout << "destructor is called" << endl;
+    }
+
+    void display(int idx){
+        cout << fixed << setprecision(2);
+        cout << "Student " << idx << ": Student ID: " << studentID << ", Name: "
+        << name << ", Marks: " << marks << ", Credits: " << credits << endl;
+    }
+
+};
+
+
+int main(){
+
+    const int totalStudents = 3;
+
+    Student students[totalStudents];
+
+    for(int i=0; i<totalStudents; i++){
+
+        int studentID;
+        string name;
+        double marks;
+
+        cin >> studentID;
+        cin.ignore();
+        getline(cin, name);
+        cin >> marks;
+
+       students[i] = Student(studentID, name, marks);
+    }
+
+
+for(int i=0; i<totalStudents; i++){
+    students[i].display(i+1);
+}
+
+
+    return 0;
+}
 
